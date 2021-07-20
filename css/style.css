@@ -42,6 +42,10 @@ header {
   object-fit: cover;
 }
 
+.menu--icon {
+  display: none;
+}
+
 a {
   text-decoration: none;
   color: azure;
@@ -165,14 +169,14 @@ li {
 }
 
 /* fading animation */
-@keyframes fade {
+/* @keyframes fade {
   from {
     opacity: 0.4;
   }
   to {
     opacity: 1;
   }
-}
+} */
 
 /* the cards section */
 .cards-section {
@@ -231,6 +235,7 @@ li {
 
 .card p {
   position: absolute;
+  text-align: center;
   top: 40px;
   left: 20px;
   padding: 10px;
@@ -261,8 +266,73 @@ hr {
 }
 
 /* media queries */
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 980px) {
   .card {
-    height: 300px;
+    height: 350px;
+    padding-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .logoImg {
+    width: 80px;
+    padding: 5px;
+  }
+  .links {
+    display: none;
+  }
+  .menu--icon {
+    display: block;
+    margin-right: 20px;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  #dashes{
+    font-size: 3rem;
+    color: azure;
+  }
+  header {
+    animation: anime 3s ease-in 0.5s;
+  }
+  .cards-section {
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding: 10px;
+  }
+  .card {
+    width: 100%;
+  }
+
+  .card p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    line-height: 1.6;
+    padding: 0;
+    transform: translate(-50%, -50%);
+  }
+
+  @keyframes anime {
+    0% {
+      opacity: 0;
+      transform: scale(0);
+    }
+
+    50% {
+      opacity: 0.5;
+      transform: scale(0.5);
+    }
+
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .footer {
+    font-size: 2rem;
   }
 }

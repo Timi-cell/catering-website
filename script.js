@@ -1,6 +1,6 @@
 var slideIndex = 0;
 
-showSlides();
+
 
 function showSlides() {
   var i;
@@ -18,5 +18,8 @@ function showSlides() {
   }
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
-  setTimeout(showSlides, 1000);
+  setTimeout(showSlides, 3000);
+  
 }
+
+showSlides();
