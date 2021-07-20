@@ -44,12 +44,12 @@ header {
 
 a {
   text-decoration: none;
-  color: rgb(56, 33, 3);
+  color: azure;
   transition: color 0.25s ease-in;
 }
 
 a:hover {
-  color: #fff;
+  filter: drop-shadow(1px 1px 2px brown);
 }
 
 li {
@@ -199,6 +199,9 @@ li {
   color: antiquewhite;
 }
 
+.card a{
+  color: rgb(71, 60, 60);
+}
 .card:hover .card i {
   color: antiquewhite;
   filter: drop-shadow(1px 2px 3px rgb(90, 85, 85));
@@ -207,6 +210,7 @@ li {
 .card:hover a {
   color: rgb(187, 115, 64);
 }
+
 .card a:hover {
   color: azure;
 }
