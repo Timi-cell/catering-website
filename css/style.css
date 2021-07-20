@@ -8,7 +8,7 @@
 
 html {
   font-size: 62.5%;
-  scroll-behavior: smooth   ;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -50,14 +50,12 @@ a {
 
 a:hover {
   color: #fff;
- 
 }
 
 li {
   list-style-type: none;
   margin-right: 20px;
   display: inline;
-
 }
 
 .links {
@@ -173,7 +171,7 @@ li {
 /* the cards section */
 .cards-section {
   margin-top: 60px;
- cursor: pointer;
+  cursor: pointer;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -201,12 +199,12 @@ li {
   color: antiquewhite;
 }
 
-.card:hover .card i{
+.card:hover .card i {
   color: antiquewhite;
   filter: drop-shadow(1px 2px 3px rgb(90, 85, 85));
 }
 
-.card:hover a{
+.card:hover a {
   color: rgb(187, 115, 64);
 }
 .card a:hover {
@@ -238,6 +236,7 @@ hr {
   justify-content: center;
   align-items: center;
   margin-top: 10px;
+  color: azure;
   padding: 5px;
 }
 .footer div {
@@ -246,17 +245,12 @@ hr {
 
 .footer a {
   color: black;
-  transition: all 0.5s ease-in-out;
-}
-
-.footer a:hover {
   filter: drop-shadow(1px 2px 3px #fff);
 }
 
-
 /* media queries */
-@media screen and (max-width:960px) {
-  .card{
+@media screen and (max-width: 960px) {
+  .card {
     height: 300px;
   }
 }
