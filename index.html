@@ -24,6 +24,7 @@
     <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
     <title>Cakes and Beyond</title>
   </head>
+
   <body>
     <div class="body--color">
       <header>
@@ -43,6 +44,18 @@
         </div>
         <div class="menu--icon">
           <i id="dashes" class="fas fa-bars"></i>
+        </div>
+        <div id="myNav" class="overlay">
+          <span class="closebtn" 
+            ><i id="times" class="fas fa-times"></i>
+          </span>
+          <div class="overlay-content">
+            <a href="#">Home</a>
+            <a href="#">Explore Store</a>
+            <a href="#">Available Promo</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+          </div>
         </div>
       </header>
 
@@ -121,17 +134,17 @@
           </div>
         </div>
         <!-- the previous and next buttons -->
-        <a class="prev" id="prev">&#10094;</a>
-        <a class="next" id="next">&#10095;</a>
+        <a class="prev" id="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" id="next" onclick="plusSlides(1)">&#10095;</a>
       </nav>
       <br />
       <!-- the dots and circles -->
       <div style="text-align: center">
-        <span class="dot" id="dot1"></span>
-        <span class="dot" id="dot2"></span>
-        <span class="dot" id="dot3"></span>
-        <span class="dot" id="dot4"></span>
-        <span class="dot" id="dot5"></span>
+        <span class="dot" id="dot1" onclick="currentSlide(1)"></span>
+        <span class="dot" id="dot2" onclick="currentSlide(2)"></span>
+        <span class="dot" id="dot3"  onclick="currentSlide(3)"></span>
+        <span class="dot" id="dot4"  onclick="currentSlide(4)"></span>
+        <span class="dot" id="dot5"  onclick="currentSlide(5)"></span>
       </div>
 
       <nav class="cards-section">
@@ -152,8 +165,8 @@
         <div class="card-3 card">
           <i class="fas fa-comment-dots"></i>
           <p>
-            Head over to <a href="#">"Contact Page"</a> to make your orders ... We
-            assure swift response!.
+            Head over to <a href="#">"Contact Page"</a> to make your orders ...
+            We assure swift response!.
           </p>
         </div>
       </nav>

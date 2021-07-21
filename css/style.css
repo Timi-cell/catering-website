@@ -42,7 +42,8 @@ header {
   object-fit: cover;
 }
 
-.menu--icon {
+.menu--icon,
+.overlay {
   display: none;
 }
 
@@ -286,20 +287,61 @@ hr {
     margin-right: 20px;
     padding: 10px;
     cursor: pointer;
+
+  }
+  .text {
+    bottom: 5px;
   }
 
-  #dashes{
+  #dashes {
     font-size: 3rem;
     color: azure;
   }
-  header {
-    animation: anime 3s ease-in 0.5s;
+  .overlay {
+    display: block;
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
   }
+
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .overlay a {
+    font-size: 2rem;
+    padding: 8px;
+    margin-top: 5px;
+    display: block;
+  }
+
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: azure;
+    font-size: 3rem;
+    cursor: pointer;
+  }
+  /* header {
+    animation: anime 3s ease-in 0.5s;
+  } */
   .cards-section {
     flex-direction: column;
     justify-content: space-evenly;
     gap: 10px;
-    padding: 10px;
+    padding-bottom: 70px;
   }
   .card {
     width: 100%;
@@ -315,7 +357,7 @@ hr {
     transform: translate(-50%, -50%);
   }
 
-  @keyframes anime {
+  /* @keyframes anime {
     0% {
       opacity: 0;
       transform: scale(0);
@@ -330,9 +372,20 @@ hr {
       opacity: 1;
       transform: scale(1);
     }
-  }
+  } */
 
   .footer {
     font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
   }
 }
