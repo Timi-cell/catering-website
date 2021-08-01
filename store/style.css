@@ -1,0 +1,53 @@
+/* GENERAL */
+
+body,
+header {
+  color: #fff;
+  background: radial-gradient(circle, rgb(94, 96, 96), black);
+}
+/* All stores section */
+section {
+  margin-top: 1.5rem;
+  padding: 2rem 3rem;
+  border-bottom: 2px solid gray;
+}
+
+.cakes img,
+.doughs img,
+.snacks img {
+  width: 50%;
+  max-width: 400px;
+  margin-top: 2rem;
+  object-fit: cover;
+}
+
+.cakes div,
+.doughs div,
+.snacks div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 780px) {
+  .cakes div,
+  .doughs div,
+  .snacks div {
+    flex-direction: column;
+    font-size: 2.5rem;
+  }
+  .cakes img,
+  .doughs img,
+  .snacks img {
+    width: 60%;
+    max-width: 600px;
+    margin-top: 2.5rem;
+  }
+  h2{
+    font-size: 3rem;
+  }
+}
