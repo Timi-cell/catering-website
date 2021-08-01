@@ -43,7 +43,7 @@ section {
   .cakes img,
   .doughs img,
   .snacks img {
-    width: 60%;
+    width: 100%;
     max-width: 600px;
     margin-top: 2.5rem;
   }
