@@ -16,7 +16,7 @@ section {
 .doughs img,
 .snacks img {
   width: 50%;
-  max-width: 400px;
+  max-width: 450px;
   margin-top: 2rem;
   object-fit: cover;
 }
