@@ -32,6 +32,11 @@ transform: translate(-50%, -50%);
     gap: 5rem;
     z-index: 2;
   }
+  .banner div{
+    border-right: 1px solid grey;
+    border-left: 1px solid grey;
+    padding: 1.5rem;
+}
 }
 @media screen and (max-width:340px) {
   .banner{
@@ -40,7 +45,7 @@ transform: translate(-50%, -50%);
   }
 }
 section {
-  margin-top: 4rem;
+  margin-top: 5rem;
   padding: 2rem 3rem;
   border-bottom: 2px solid gray;
 }

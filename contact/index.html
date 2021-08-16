@@ -63,11 +63,12 @@
     <!-- Contact form -->
     <h1>Contact Us</h1>
     <section>
-      <form>
+      <form netlify>
         <label for="name">Name</label>
         <input
           type="text"
           id="name"
+          name="Name"
           autofocus
           spellcheck="false"
           placeholder="type your name here"
@@ -77,6 +78,7 @@
         <input
           type="email"
           id="email"
+          name="email"
           spellcheck="false"
           placeholder="type your email address here"
           required
@@ -85,6 +87,7 @@
         <input
           type="number"
           id="phone"
+          name="Phone number"
           spellcheck="false"
           placeholder="type your phone number here"
           required
@@ -94,6 +97,7 @@
           id="message"
           cols="50"
           rows="10"
+          name="message"
           placeholder="type in your order/orders here"
           required
         ></textarea>
