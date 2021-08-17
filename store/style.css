@@ -1,45 +1,64 @@
 /* GENERAL */
 
-body{
+body {
   position: relative;
 }
 
+p {
+  text-align: center;
+}
 body,
-header ,.banner{
+header,
+.banner {
   color: #fff;
   background: radial-gradient(circle, rgb(94, 96, 96), black);
 }
+
+.message {
+  line-height: 1.8;
+  text-align: center;
+  padding: 2rem 5rem;
+}
+
+.message::before,
+.message::after {
+  content: "''";
+}
+
+.message__link {
+  text-decoration: underline;
+}
 /* All stores section */
 /* Banner section */
-.banner  {
+.banner {
   margin-top: 3rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
   gap: 20rem;
- text-transform: uppercase;
-cursor: pointer;
-position: fixed;
-width: 100%;
-padding: 1rem 2rem;
-top: 10rem;
-left: 50%;
-transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  cursor: pointer;
+  position: fixed;
+  width: 100%;
+  padding: 1rem 2rem;
+  top: 10rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-@media screen and (max-width:620px) {
-  .banner{
+@media screen and (max-width: 620px) {
+  .banner {
     gap: 5rem;
     z-index: 2;
   }
-  .banner div{
+  .banner div {
     border-right: 1px solid grey;
     border-left: 1px solid grey;
     padding: 1.5rem;
+  }
 }
-}
-@media screen and (max-width:340px) {
-  .banner{
+@media screen and (max-width: 340px) {
+  .banner {
     gap: 1rem;
     padding: 1rem 1rem;
   }
@@ -85,7 +104,7 @@ section {
     max-width: 600px;
     margin-top: 2.5rem;
   }
-  h2{
+  h2 {
     font-size: 3rem;
   }
 }
