@@ -81,7 +81,7 @@ button:hover{
 
 @media screen and (max-width:410px) {
    input,textarea{
-       width: 300px;
+       width: 100%;
    }
 }
 @media screen and (max-width:780px) {
