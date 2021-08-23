@@ -4,7 +4,9 @@ header {
   background: radial-gradient(circle, rgb(94, 96, 96), black);
 }
 
-h1,h2 {
+h1,
+h2,
+h3 {
   text-align: center;
 }
 section {
@@ -70,17 +72,33 @@ button:hover {
   text-align: center;
   margin-bottom: 1.5rem;
 }
-.bottom h2{
+.bottom h2 {
   margin-top: 1rem;
 }
-.bottom p{
+.bottom h2::before,
+.bottom h2::after {
+  content: " ----- ";
+}
+.bottom h3 {
+  font-size: 3.5rem;
+  margin-top: 2rem;
+}
+.bottom p {
   margin-top: 2rem;
   font-size: 2rem;
   line-height: 1.6;
 }
-.bottom a {
-  text-decoration: underline;
+.bottom button {
+  max-width: 30rem;
 }
+
+.bottom button:hover a {
+  color: #000;
+}
+.bottom a {
+  text-decoration: none;
+}
+
 .bottom div {
   margin-top: 1.8rem;
 }
@@ -90,6 +108,10 @@ button:hover {
   textarea {
     width: 320px;
   }
+  .bottom button {
+    width: 50%;
+    line-height: 1.5;
+  }
 }
 
 @media screen and (max-width: 350px) {
@@ -98,4 +120,3 @@ button:hover {
     width: 100%;
   }
 }
-
