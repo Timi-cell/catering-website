@@ -87,6 +87,7 @@ button:hover {
   margin-top: 2rem;
   font-size: 2rem;
   line-height: 1.6;
+  padding: 0.5rem;
 }
 .bottom button {
   max-width: 30rem;
