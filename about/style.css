@@ -13,6 +13,8 @@ header {
 .about--top {
   margin-top: 1.5rem;
   padding: 2.5rem;
+  text-align: center;
+  line-height: 1.5;
 }
 .about--top a {
   text-decoration: underline;
