@@ -210,7 +210,12 @@ li {
   transition: all 0.2s ease-in-out;
 }
 
-.card:hover {
+/* .card:hover {
+  background-color: rgb(71, 70, 70);
+  color: antiquewhite;
+} */
+
+.card-2 {
   background-color: rgb(71, 70, 70);
   color: antiquewhite;
 }
@@ -218,6 +223,7 @@ li {
 .card a {
   color: rgb(71, 60, 60);
 }
+/*
 .card:hover .card i {
   color: antiquewhite;
   filter: drop-shadow(1px 2px 3px rgb(90, 85, 85));
@@ -230,6 +236,7 @@ li {
 .card a:hover {
   color: azure;
 }
+*/
 .card i {
   position: absolute;
   top: 10px;
